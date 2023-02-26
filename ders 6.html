@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+	
+	<title>Səhifənin adıdır</title>
+
+</head>
+<body>
+<fieldset>
+	<legend>Qeydiyyat</legend>
+	<form action="sehife.html" method="GET" enctype="multipart/form-data">
+
+    <label for="ad">
+    	Adınız:
+		<input type="text" name="ad" id="ad"  value="Ramazan" placeholder="Adınızı daxil edin" >
+	</label><br>
+
+	<label for="soyad">
+    	Soyadınız:
+		<input type="text" name="soyad" id="soyad" placeholder="Soyadınızı daxil edin" required maxlength="7" minlength="3" autocomplete="off"> <!-- autocomplete-keçmiş yazılan ad və başqa məlumatları sildikdə yenidən göstərmir-->
+	</label><br>
+
+	<label>
+		Şifrəniz:
+		<input type="password" name="sifre" placeholder="Şifrənizi daxil edin" autofocus>
+	</label><br>
+
+	<label>
+		E-mail:<input type="email" name="email" placeholder="E-mailinizi daxil edin">
+	</label><br>
+
+	<label>
+		<input type="file" name="fayl []" multiple>   <!-- []- qəbul olunmuş bir neçə faylları digər səhifədə qəbul edə bilsin -->                     <!-- multiple-bir neçə fayl seçmək üçündür-->
+	</label><br>
+
+	<label>
+		<input type="radio" name="cinsiyyət">
+		kişi
+	</label>
+
+	<label>
+		<input type="radio" name="cinsiyyət">
+		qadın
+	</label><br>
+
+	<label>
+		<input type="range" name="range">
+	</label><br>
+
+	<label>
+		<input type="search" name="axtar">
+	</label><br>
+
+	<label>
+		<input type="url" name="link">
+	</label><br>
+
+	<label>
+		<input list="Front-End">
+		<datalist id="Front-End">
+			<option value="HTML">
+			<option value="CSS">
+			<option value="REACT">
+		</datalist>
+	</label><br>
+
+	<label>
+		<select>
+			<optgroup label="Front-End">
+			    <option>HTML</option>
+			    <option>CSS</option>
+			    <option>REACT</option>
+			</optgroup>
+			<optgroup label="Back-End">
+				<option>PHP</option>
+				<option>JAVA</option>
+				<option>C#</option>
+			</optgroup>
+		</select>
+	</label><br>
+	<br><br>
+	<input type="color" name="rəng"><br>
+	<input type="number" name="rəqəm" max="10" min="3"><br>
+	<input type="date" name="tarix">
+	<br><br>
+	<textarea rows="10" cols="30"  placeholder="Hər hansı mətn daxil edin"></textarea>
+         
+	<label>
+		<input type="checkbox" name="istifadəçi razılaşması" checked>
+		İstifadəçi razılaşmasını qəbul edirəm!
+	</label><br>
+
+	<label>
+		<input type="submit" name="gonder" value="Göndər">
+	</label>
+
+	<label>
+		<input type="reset" name="reset" value="Sıfırla">
+	</label>
+	
+
+	</form>
+	</fieldset>
+
+</body>
+</html>
